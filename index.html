@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!-- Link to Goose Game: -->
+<head>
+
+	<title>MY GOOSE GAME</title>
+	<meta charset="utf-8" />
+	
+	<link href="index.css" type="text/css" rel="stylesheet" />
+	
+	
+</head>
+<body>
+
+	<div id="menu" class="menu">
+	
+		<div id = "picture" >
+			<img src="images/gooseSpriteHead1.png" id="gooseSpriteHead1" class="gooseSpriteHead" alt="goose">
+			<img src="images/gooseSpriteHead2.png" id="gooseSpriteHead2" class="gooseSpriteHead" alt="goose">
+			<img src="images/gooseSpriteHead3.png" id="gooseSpriteHead3" class="gooseSpriteHead" alt="goose">
+		</div>
+		
+		<h1>Goose Game</h1>
+		
+		<ul>
+			<li><a id="play" href="#">Play!</a></li>
+			<li><a id="help" href="#">Help!</a></li>
+			<li><a id="credits" href="#">Credits!</a></li>
+			<li><a id="highscores" href="#">High Scores!</a></li>
+		</ul>
+		
+	</div>
+	<div id="playMenu" class="menu" hidden>
+
+		<ul>
+			<li><a class="back" href="#">Go Back!</a></li>
+			<li><a id="createGoose" href="#">Create Goose</a></li>
+			<li><a id="createLevel" href="#">Create Level</a></li>
+		</ul>
+		
+		<div id ="gameArea">
+			<p><span id = "seconds">60</span><span id = "milliseconds">0000</span></p>
+		</div>
+		
+		<div id="lossScreen" hidden>
+			<a class="back" href="#">Back to Main Menu</a>
+		</div>
+	</div>
+	<div id="helpMenu" class="menu" hidden>
+		<ul>
+			<li><a class="back" href="#">Go Back!</a></li>
+		</ul>
+	</div>
+	<div id="creditsMenu" class="menu" hidden>
+		<ul>
+			<li><a class="back" href="#">Go Back!</a></li>
+		</ul>
+	</div>
+	<div id="highscoresMenu" class="menu" hidden>
+		<ul>
+			<li><a class="back" href="#">Go Back!</a></li>
+		</ul>
+	</div>
+	
+	<script src="js/inheritance.js" type="text/javascript"></script>
+	<script src="js/animation.js" type="text/javascript"></script>	
+	<script src="js/music.js" type="text/javascript"></script>	
+	<script src="js/menu.js" type="text/javascript"></script>
+	<script src="js/sprite.js" type="text/javascript"></script>	
+	<script src="js/game-object.js" type="text/javascript"></script>
+	<script src="js/world.js" type="text/javascript"></script>
+	<script src="js/influence.js" type="text/javascript"></script>
+	<script src="js/goose.js" type="text/javascript"></script>
+	<script src="js/sound.js" type="text/javascript"></script>	
+	<script src="js/mouse.js" type="text/javascript"></script>
+	<script src="js/poop.js" type="text/javascript"></script>
+	<script src="js/sidewalk.js" type="text/javascript"></script>
+	<script src="js/meter.js" type="text/javascript"></script>
+	<script src="js/timer.js" type="text/javascript"></script>
+	<script src="js/game.js" type="text/javascript"></script>
+	
+</body>
+</html>
