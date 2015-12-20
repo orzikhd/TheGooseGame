@@ -190,7 +190,7 @@ var Animation = function() {
 	// duration: duration of shake.
 	// complete: callback function called when the shake completes.
 	function shake(element,intensity,duration, complete) {
-		
+
 		var computedStyle = document.defaultView.getComputedStyle(element);
 		var elementX = parseInt(computedStyle.left);
 		var elementY = parseInt(computedStyle.top);

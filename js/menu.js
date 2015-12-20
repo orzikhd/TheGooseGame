@@ -38,7 +38,7 @@ MainMenu.prototype.show = function(cb) {
 	Animation.breath(menu.list,20);
 
 	// Pauses the animation to run when the music comes in.
-	// Sorry I have to method chain so hard with this call, but java is single threaded so 
+	// Sorry I have to method chain so hard with this call, but js is single threaded so 
 	// there's not many other ways to make this animation line up with the music.
 	var timeout = setTimeout(
 		function() {
@@ -112,6 +112,7 @@ MainMenu.prototype.itemCallbacks = {
 	},
 	help: function() {
 		Animation.fadeIn(document.getElementById('helpMenu'));
+		createHelpMenu();
 	},
 	credits: function() {
 		Animation.fadeIn(document.getElementById('creditsMenu'));

@@ -67,4 +67,24 @@ function createLevel(world, difficulty) {
 	}
 }
 
+/**
+ * Initialize the help menu
+ */
+function createHelpMenu() {
+	console.log("jxrhzsrt");
+	var zoo = new World(document.getElementById('helpArea'));
+	zoo.addObject(zoo.mouse = new Mouse);
+	setInterval(zoo.update.bind(zoo), 25);	
+	createLevel(zoo, 1);
+	GooseSpawn(zoo);
+}
+
+
+
+
+
+
+
+
+
 
